@@ -78,3 +78,35 @@
 ////////////////////////////////////////////
 
 
+
+
+//int[] numbers = { 4, 7, 2, 9, 4, 3, 7, 8, 9, 1, 5, 3, 6, 2, 8, 10 };
+//int[] uniqueNumbers = numbers.Distinct().ToArray();
+
+//int maxNumber = uniqueNumbers.Max();
+//Console.WriteLine("Tekrarlanan edeler: " +string.Join(" - " , uniqueNumbers));
+//Console.WriteLine("En boyuk eded: " +maxNumber);
+
+
+//////////////////////////////////////////
+
+
+//string[] words = { "Proqramlasdirma", "mekteb", "komputer", "developer", "texnologiya" };
+//string[] sortedWords = words.OrderByDescending(word=> word.Length).ToArray();
+//Console.WriteLine("En uzun 3 soz: ");
+//for (int i = 0; i<3 && i< sortedWords.Length; i++)
+//{
+//    Console.WriteLine(sortedWords[i]);
+//}
+
+/////////////////////////////////
+
+
+
+double[] numbers = { 10.5, 25.0, 30.2, 50.8, 75.3, 90.6 };
+
+double[] modifiedNumbers = numbers.Select(modifiedNumbers => (modifiedNumbers / 5) + 2).ToArray();
+Console.WriteLine("Yekun n'tice");
+Console.WriteLine(string.Join(", ", modifiedNumbers));
+
+/////////////////////////////////////
